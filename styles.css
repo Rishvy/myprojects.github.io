@@ -1,0 +1,262 @@
+
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b2def4;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+header {
+  background-color: #b2def4;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+h1 {
+  font-size: 46px;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #0b4bb3;
+  padding: 18px 0;
+  
+}
+
+ul {
+  
+  padding: 0;
+  text-align: center;
+  
+}
+
+li {
+  display: inline;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 62px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 24px;
+  color: #070707;
+  padding: 10px;
+}
+
+#vitlogo{
+  width: 500px;
+}
+
+#slider{
+  overflow: hidden;
+}
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: slider 10s infinite;
+}
+
+#slider figure img{
+  float: left;
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  40% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  80% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+  120% {
+    left: -300%;
+  }
+
+}
+
+/* ... (previous CSS styles) ... */
+
+
+/* Style the department sections */
+.department {
+  margin: 20px;
+  padding: 20px;
+  border: 4px solid #0b4bb3;
+}
+
+.department h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style links within the course list */
+.department ul li a {
+  color: #2c72e1;
+  text-decoration: none;
+  text-align: center;
+  font-size: 26px;
+}
+
+.department ul li a:hover {
+  text-decoration: underline;
+  color: #0b4bb3;
+}
+
+.dep-pic {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+
+.course-section {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-heading {
+  font-size: 34px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.course-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 18px;
+}
+
+.course-description {
+  font-size: 20px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Reset some default browser styles */
+
+/* Style form groups (labels and inputs) */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group select {
+  height: 40px;
+}
+
+/* Style the submit button */
+.form-group input[type="submit"] {
+  background-color: #0b4bb3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Add hover effect to the submit button */
+.form-group input[type="submit"]:hover {
+  background-color: #074190;
+}
+
+.admissions{
+  max-width: 400px;
+  align-items: center;
+  
+}
+
+.admissions-header{
+  color: #222222;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <title>College Name - Home</title>
+</head>
+<body>
+    <header>
+        <img id="vitlogo" src="./vit_logo.png" alt="College Photo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./home_page.html">Home</a></li>
+            <li><a href="./academics.html">Academics</a></li>
+            <li><a href="./admission.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="admissions-header">College Admission Form</h1>
+    </header>
+ 
+
+    <main class="admissions">
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="previousSchool">Previous School/College:</label>
+                <input type="text" id="previousSchool" name="previousSchool" required>
+            </div>
+
+            <div class="form-group">
+                <label for="previousGrades">Previous Grades:</label>
+                <input type="text" id="previousGrades" name="previousGrades" required>
+            </div>
+
+            <div class="form-group">
+                <label for="desiredCourse">Desired Course:</label>
+                <input type="text" id="desiredCourse" name="desiredCourse" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments/Additional Information:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
