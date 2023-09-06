@@ -114,10 +114,7 @@ p {
 
 }
 
-/* ... (previous CSS styles) ... */
 
-
-/* Style the department sections */
 .department {
   margin: 20px;
   padding: 20px;
@@ -129,7 +126,7 @@ p {
   text-align: center;
 }
 
-/* Style links within the course list */
+
 .department ul li a {
   color: #2c72e1;
   text-decoration: none;
@@ -208,7 +205,6 @@ p {
   height: 40px;
 }
 
-/* Style the submit button */
 .form-group input[type="submit"] {
   background-color: #0b4bb3;
   color: #fff;
@@ -219,7 +215,7 @@ p {
   font-size: 18px;
 }
 
-/* Add hover effect to the submit button */
+
 .form-group input[type="submit"]:hover {
   background-color: #074190;
 }
@@ -245,13 +241,11 @@ p {
 
 
 .image img {
-  width: 300px; /* Initial width */
-  transition:  0.1s; /* Transition width and z-index properties */
- /* Start with a higher z-index to be above other images */
+  width: 400px;
+  transition:  0.2s; 
 }
 
-.image:hover img {
-  width: 500px; /* Width on hover */
-   /* Increase z-index on hover to be above other images */
-}
 
+.image:hover img:hover {
+  width: 700px;
+}
